@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #000;
+  color: white;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.links a {
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* VIDEO */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* OVERLAY */
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+/* TEXT */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.hero-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+  line-height: 1.2;
+  max-width: 700px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* STATEMENT */
+.statement {
+  padding: 100px 80px;
+  max-width: 800px;
+}
+
+.statement p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* WORK */
+.work {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.project {
+  position: relative;
+}
+
+.project img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: 0.5s;
+}
+
+.project:hover img {
+  filter: brightness(50%);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.overlay h2 {
+  margin: 0;
+}
+
+/* CAPABILITIES */
+.capabilities {
+  padding: 120px 80px;
+}
+
+.capabilities h2 {
+  margin-bottom: 40px;
+}
+
+.cap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.cap-grid div {
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+/* CTA */
+.cta {
+  padding: 120px 80px;
+  text-align: center;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.cta a:hover {
+  background: white;
+  color: black;
+}
