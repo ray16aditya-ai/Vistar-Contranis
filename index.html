@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vistar</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-text">VISTAR</div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images/logo.png">
+  </div>
+
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="services.html">Services</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="contranis.html">Contranis</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+  <div class="hero-overlay"></div>
+
+  <img src="images/cart.jpeg" class="hero-img">
+
+  <div class="hero-content">
+    <h1 class="reveal-text">
+      <span>We Build Brands</span><br>
+      <span>That Scale</span>
+    </h1>
+  </div>
+
+  <div class="scroll-indicator">⌄</div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" data-aos="fade-up">
+
+  <h4>We are Vistar</h4>
+
+  <p>
+    We help brands grow through strategy, creativity, and performance-driven marketing. 
+    From building identity to scaling revenue, we partner with businesses to create 
+    meaningful impact and long-term success.
+  </p>
+
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services" data-aos="fade-up">
+
+  <h2>What We Do</h2>
+
+  <div class="services-grid">
+
+    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="icon">⚡</div>
+      <h3>Branding</h3>
+      <p>Building identities that stand out and stay memorable.</p>
+    </div>
+
+    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="icon">📱</div>
+      <h3>Social Media Marketing</h3>
+      <p>Content and strategy that drives real engagement.</p>
+    </div>
+
+    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="icon">🎯</div>
+      <h3>Meta Ads</h3>
+      <p>Performance campaigns focused on ROI and scale.</p>
+    </div>
+
+    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="icon">✍️</div>
+      <h3>Content Writing</h3>
+      <p>Words that convert and communicate clearly.</p>
+    </div>
+
+    <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+      <div class="icon">💻</div>
+      <h3>Website Development</h3>
+      <p>Fast, modern websites built for growth.</p>
+    </div>
+
+    <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+      <div class="icon">🚀</div>
+      <h3>Advertising</h3>
+      <p>Creative campaigns that actually deliver results.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BLOGS SECTION -->
+<section class="blogs" id="blogs" data-aos="fade-up">
+
+  <h2>Insights & Blogs</h2>
+
+  <div class="blog-grid">
+
+    <div class="blog-card">
+      <h3>How Branding Impacts Business Growth</h3>
+      <p>Why strong brand identity directly affects revenue and customer trust.</p>
+      <a href="post.html">Read More →</a>
+    </div>
+
+    <div class="blog-card">
+      <h3>Social Media Strategies That Actually Work</h3>
+      <p>Cut through noise with proven strategies used by high-growth brands.</p>
+      <a href="post.html">Read More →</a>
+    </div>
+
+    <div class="blog-card">
+      <h3>Why Performance Marketing Is the Future</h3>
+      <p>How data-driven campaigns outperform traditional advertising methods.</p>
+      <a href="post.html">Read More →</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta">
+
+  <h2>Let's Build Something Great</h2>
+  <p>We help brands grow faster with strategy, creativity, and performance.</p>
+
+  <a href="#" class="cta-btn magnetic">Get Started</a>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-left">
+    <img src="images/logo.png">
+    <p>© 2026 Vistar. All rights reserved.</p>
+  </div>
+
+  <div class="footer-right">
+    <a href="#">Instagram</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Contact</a>
+  </div>
+
+</footer>
+
+<!-- LOADER SCRIPT -->
+<script>
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    loader.style.transition = "0.6s";
+
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 600);
+  }, 1200);
+});
+</script>
+
+<!-- CUSTOM CURSOR -->
+<script>
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", e => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+});
+</script>
+
+<!-- MAGNETIC BUTTON -->
+<script>
+const magneticBtns = document.querySelectorAll(".magnetic");
+
+magneticBtns.forEach(btn => {
+  btn.addEventListener("mousemove", e => {
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+
+    btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+  });
+
+  btn.addEventListener("mouseleave", () => {
+    btn.style.transform = "translate(0,0)";
+  });
+});
+</script>
+
+<!-- HERO PARALLAX -->
+<script>
+window.addEventListener("scroll", () => {
+  const hero = document.querySelector(".hero-img");
+  let scroll = window.scrollY;
+
+  hero.style.transform = `scale(1.08) translateY(${scroll * 0.2}px)`;
+});
+</script>
+
+<!-- ABOUT SCROLL REVEAL -->
+<script>
+const aboutSection = document.querySelector(".about");
+
+window.addEventListener("scroll", () => {
+  const trigger = window.innerHeight * 0.8;
+
+  if (aboutSection.getBoundingClientRect().top < trigger) {
+    aboutSection.classList.add("show");
+  }
+});
+</script>
+
+<!-- SERVICE CARD GLOW -->
+<script>
+document.querySelectorAll('.service-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    card.style.setProperty('--x', x + 'px');
+    card.style.setProperty('--y', y + 'px');
+  });
+});
+</script>
+
+<!-- AOS + NAVBAR SCROLL -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+
+  window.addEventListener("scroll", function() {
+    const nav = document.querySelector(".navbar");
+    nav.classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
+
+</body>
+</html>
