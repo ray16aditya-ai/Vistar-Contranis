@@ -255,4 +255,26 @@ body {
 .contranis-theme section {
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
+/* FORCE CONTRANIS NAVY THEME */
 
+body.contranis-theme {
+  background: #0b0f1a !important;
+  color: #ffffff !important;
+}
+
+.contranis-theme section,
+.contranis-theme .hero,
+.contranis-theme .about,
+.contranis-theme .services,
+.contranis-theme .footer {
+  background: #0b0f1a !important;
+}
+
+.contranis-theme .work,
+.contranis-theme .horizontal-work {
+  background: #12182b !important;
+}
+
+.contranis-theme div {
+  background-color: transparent;
+}
