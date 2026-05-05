@@ -216,3 +216,41 @@ body {
   background: white;
   color: black;
 }
+/* CONTRANIS THEME ONLY */
+.contranis-theme {
+  background: #0b0f1a;
+  color: #ffffff;
+}
+
+/* Sections */
+.contranis-theme .hero,
+.contranis-theme .about,
+.contranis-theme .services,
+.contranis-theme .footer {
+  background: #0b0f1a;
+}
+
+.contranis-theme .work,
+.contranis-theme .horizontal-work {
+  background: #12182b;
+}
+
+/* Text */
+.contranis-theme p {
+  color: rgba(255,255,255,0.7);
+}
+
+/* Cards */
+.contranis-theme .service-card {
+  background: rgba(255,255,255,0.05);
+}
+
+.contranis-theme .service-card:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* Borders for premium feel */
+.contranis-theme section {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
