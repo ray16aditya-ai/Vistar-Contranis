@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   color: white;
-  background: #000; /* Vistar default stays black */
+  background: #000;
 }
 
 /* ================= NAV ================= */
@@ -46,7 +46,7 @@ body {
   z-index: 1;
 }
 
-/* OVERLAY (FIXED TO NAVY) */
+/* OVERLAY */
 .hero-overlay {
   position: absolute;
   width: 100%;
@@ -95,12 +95,13 @@ body {
   color: #ccc;
 }
 
-/* ================= HORIZONTAL PORTFOLIO ================= */
+/* ================= PORTFOLIO ================= */
 .horizontal-work {
   padding: 120px 0;
   background: #12182b;
   color: #fff;
   overflow: hidden;
+  position: relative;
 }
 
 .horizontal-work .section-title {
@@ -146,80 +147,9 @@ body {
   }
 }
 
-/* ================= CAPABILITIES ================= */
-.capabilities {
-  padding: 120px 80px;
-}
-
-.capabilities h2 {
-  margin-bottom: 40px;
-}
-
-.cap-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.cap-grid div {
-  padding: 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-/* ================= CTA ================= */
-.cta {
-  padding: 120px 80px;
-  text-align: center;
-}
-
-.cta a {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 30px;
-  border: 1px solid white;
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
-
-.cta a:hover {
-  background: white;
-  color: black;
-}
-
-/* ================= CONTRANIS NAVY THEME ================= */
-
-body.contranis-theme {
-  background: #0b0f1a !important;
-  color: #ffffff !important;
-}
-
-/* Sections */
-.contranis-theme .hero,
-.contranis-theme .statement,
-.contranis-theme .capabilities,
-.contranis-theme .cta {
-  background: #0b0f1a !important;
-}
-
-/* Portfolio section */
-.contranis-theme .horizontal-work {
-  background: #12182b !important;
-}
-
-/* Text */
-.contranis-theme p {
-  color: rgba(255,255,255,0.7);
-}
-
-/* Borders */
-.contranis-theme section {
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-/* ================= FINAL CTA (THESIS STYLE) ================= */
-
+/* ================= FINAL CTA ================= */
 .final-cta {
-  height: 100vh;
+  padding: 160px 20px 120px;
   background: #0b0f1a;
   display: flex;
   flex-direction: column;
@@ -254,8 +184,32 @@ body.contranis-theme {
 
 /* SUBTEXT */
 .cta-sub {
-  position: absolute;
-  bottom: 40px;
+  margin-top: 60px;
   font-size: 14px;
   color: rgba(255,255,255,0.5);
+}
+
+/* ================= CONTRANIS THEME ================= */
+body.contranis-theme {
+  background: #0b0f1a !important;
+  color: #ffffff !important;
+}
+
+.contranis-theme .hero,
+.contranis-theme .statement,
+.contranis-theme .horizontal-work,
+.contranis-theme .final-cta {
+  background: #0b0f1a;
+}
+
+.contranis-theme .horizontal-work {
+  background: #12182b;
+}
+
+.contranis-theme p {
+  color: rgba(255,255,255,0.7);
+}
+
+.contranis-theme section {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
