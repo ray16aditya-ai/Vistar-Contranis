@@ -216,3 +216,46 @@ body.contranis-theme {
 .contranis-theme section {
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
+/* ================= FINAL CTA (THESIS STYLE) ================= */
+
+.final-cta {
+  height: 100vh;
+  background: #0b0f1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.final-cta h1 {
+  font-size: 80px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+/* BUTTON */
+.cta-button {
+  display: inline-block;
+  padding: 16px 40px;
+  background: white;
+  color: black;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+/* SUBTEXT */
+.cta-sub {
+  position: absolute;
+  bottom: 40px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+}
