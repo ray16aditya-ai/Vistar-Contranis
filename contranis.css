@@ -1,13 +1,12 @@
+/* RESET */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  .contranis-theme .that-class {
-  background: #0b0f1a;
-}
   color: white;
+  background: #000; /* Vistar default stays black */
 }
 
-/* NAV */
+/* ================= NAV ================= */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -28,7 +27,7 @@ body {
   text-decoration: none;
 }
 
-/* HERO SECTION */
+/* ================= HERO ================= */
 .hero {
   position: relative;
   height: 100vh;
@@ -47,12 +46,12 @@ body {
   z-index: 1;
 }
 
-/* OVERLAY */
+/* OVERLAY (FIXED TO NAVY) */
 .hero-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(11, 15, 26, 0.6);
   z-index: 2;
 }
 
@@ -84,7 +83,7 @@ body {
   }
 }
 
-/* STATEMENT */
+/* ================= STATEMENT ================= */
 .statement {
   padding: 100px 80px;
   max-width: 800px;
@@ -96,68 +95,11 @@ body {
   color: #ccc;
 }
 
-/* WORK */
-.work {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.project {
-  position: relative;
-}
-
-.project img {
-  width: 100%;
-  height: 80vh;
-  object-fit: cover;
-  filter: brightness(80%);
-  transition: 0.5s;
-}
-
-.project:hover img {
-  filter: brightness(50%);
-}
-
-.overlay {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
-}
-
-.overlay h2 {
-  margin: 0;
-}
-
-/* CAPABILITIES */
-.capabilities {
-  padding: 120px 80px;
-}
-
-.capabilities h2 {
-  margin-bottom: 40px;
-}
-
-.cap-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.cap-grid div {
-  padding: 20px;
-  border-bottom: 1px solid #333;
-}
-
-/* CTA */
-.cta {
-  padding: 120px 80px;
-  text-align: center;
-}
-/* HORIZONTAL PORTFOLIO */
+/* ================= HORIZONTAL PORTFOLIO ================= */
 .horizontal-work {
   padding: 120px 0;
-  background: #f5f5f5;
-  color: #000;
+  background: #12182b;
+  color: #fff;
   overflow: hidden;
 }
 
@@ -192,9 +134,9 @@ body {
 .scroll-item p {
   margin-top: 10px;
   font-size: 16px;
+  color: #aaa;
 }
 
-/* ANIMATION */
 @keyframes scrollLeft {
   0% {
     transform: translateX(0);
@@ -202,6 +144,32 @@ body {
   100% {
     transform: translateX(-50%);
   }
+}
+
+/* ================= CAPABILITIES ================= */
+.capabilities {
+  padding: 120px 80px;
+}
+
+.capabilities h2 {
+  margin-bottom: 40px;
+}
+
+.cap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.cap-grid div {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ================= CTA ================= */
+.cta {
+  padding: 120px 80px;
+  text-align: center;
 }
 
 .cta a {
@@ -218,23 +186,25 @@ body {
   background: white;
   color: black;
 }
-/* CONTRANIS THEME ONLY */
-.contranis-theme {
-  background: #0b0f1a;
-  color: #ffffff;
+
+/* ================= CONTRANIS NAVY THEME ================= */
+
+body.contranis-theme {
+  background: #0b0f1a !important;
+  color: #ffffff !important;
 }
 
 /* Sections */
 .contranis-theme .hero,
-.contranis-theme .about,
-.contranis-theme .services,
-.contranis-theme .footer {
-  background: #0b0f1a;
+.contranis-theme .statement,
+.contranis-theme .capabilities,
+.contranis-theme .cta {
+  background: #0b0f1a !important;
 }
 
-.contranis-theme .work,
+/* Portfolio section */
 .contranis-theme .horizontal-work {
-  background: #12182b;
+  background: #12182b !important;
 }
 
 /* Text */
@@ -242,39 +212,7 @@ body {
   color: rgba(255,255,255,0.7);
 }
 
-/* Cards */
-.contranis-theme .service-card {
-  background: rgba(255,255,255,0.05);
-}
-
-.contranis-theme .service-card:hover {
-  background: rgba(255,255,255,0.08);
-}
-
-/* Borders for premium feel */
+/* Borders */
 .contranis-theme section {
   border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-/* FORCE CONTRANIS NAVY THEME */
-
-body.contranis-theme {
-  background: #0b0f1a !important;
-  color: #ffffff !important;
-}
-
-.contranis-theme section,
-.contranis-theme .hero,
-.contranis-theme .about,
-.contranis-theme .services,
-.contranis-theme .footer {
-  background: #0b0f1a !important;
-}
-
-.contranis-theme .work,
-.contranis-theme .horizontal-work {
-  background: #12182b !important;
-}
-
-.contranis-theme div {
-  background-color: transparent;
 }
