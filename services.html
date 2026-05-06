@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - Vistar</title>
 
+  <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar scrolled">
+<nav class="navbar">
   <div class="logo">
-    <img src="images/logo.png">
+    <img src="images/logo.png" alt="Vistar Logo">
   </div>
 
   <div class="nav-links">
     <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
+    <a href="services.html" class="active">Services</a>
     <a href="blogs.html">Blogs</a>
     <a href="contranis.html">Contranis</a>
     <a href="#">Contact</a>
@@ -28,8 +31,10 @@
 
 <!-- HERO -->
 <section class="services-hero">
-  <h1>What We Offer</h1>
-  <p>Strategic, creative, and performance-driven services designed to scale your brand.</p>
+  <div class="hero-content">
+    <h1>What We Offer</h1>
+    <p>Strategic, creative, and performance-driven services designed to scale your brand.</p>
+  </div>
 </section>
 
 <!-- SERVICES LIST -->
@@ -69,35 +74,35 @@
 
 <!-- PROCESS -->
 <section class="process">
-
   <h2>Our Process</h2>
 
   <div class="process-steps">
 
     <div class="step">
-      <h3>01. Strategy</h3>
-      <p>We understand your business, audience, and goals before planning anything.</p>
+      <h3>01</h3>
+      <p><strong>Strategy</strong><br>We understand your business, audience, and goals before planning anything.</p>
     </div>
 
     <div class="step">
-      <h3>02. Execution</h3>
-      <p>We implement strategies with precision, creativity, and consistency.</p>
+      <h3>02</h3>
+      <p><strong>Execution</strong><br>We implement strategies with precision, creativity, and consistency.</p>
     </div>
 
     <div class="step">
-      <h3>03. Growth</h3>
-      <p>We analyze, optimize, and scale what works to maximize results.</p>
+      <h3>03</h3>
+      <p><strong>Growth</strong><br>We analyze, optimize, and scale what works to maximize results.</p>
     </div>
 
   </div>
-
 </section>
 
-<!-- CTA -->
+<!-- CTA (FIXED) -->
 <section class="cta">
-  <h2>Let's Grow Your Brand</h2>
-  <p>Partner with Vistar and take your business to the next level.</p>
-  <a href="#" class="cta-btn magnetic">Start a Project</a>
+  <div class="cta-inner">
+    <h2>Let’s Grow Your Brand</h2>
+    <p>Partner with Vistar and take your business to the next level.</p>
+    <a href="#" class="cta-btn">Start a Project</a>
+  </div>
 </section>
 
 </body>
