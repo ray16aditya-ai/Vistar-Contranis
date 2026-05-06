@@ -1,109 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - Vistar</title>
+/* RESET */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #111;
+}
 
-  <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #071426;
+}
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+}
 
-<body>
+/* HERO */
+.services-hero {
+  padding: 180px 80px 80px;
+  background: #071426;
+  color: white;
+}
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="logo">
-    <img src="images/logo.png" alt="Vistar Logo">
-  </div>
+.services-hero h1 {
+  font-size: 60px;
+}
 
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="services.html" class="active">Services</a>
-    <a href="blogs.html">Blogs</a>
-    <a href="contranis.html">Contranis</a>
-    <a href="#">Contact</a>
-  </div>
-</nav>
+/* SERVICES */
+.services-detail {
+  padding: 100px 80px;
+  max-width: 900px;
+  margin: auto;
+}
 
-<!-- HERO -->
-<section class="services-hero">
-  <div class="hero-content">
-    <h1>What We Offer</h1>
-    <p>Strategic, creative, and performance-driven services designed to scale your brand.</p>
-  </div>
-</section>
+.service-block {
+  margin-bottom: 70px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+}
 
-<!-- SERVICES LIST -->
-<section class="services-detail">
+.service-block h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
 
-  <div class="service-block">
-    <h2>Branding</h2>
-    <p>We create strong brand identities that differentiate you in competitive markets. From logo design to full brand systems, everything is crafted to build recognition and trust.</p>
-  </div>
+.service-block p {
+  color: #555;
+  line-height: 1.6;
+}
 
-  <div class="service-block">
-    <h2>Social Media Marketing</h2>
-    <p>We plan, create, and manage content that connects with your audience and drives engagement. Our strategies are designed to grow your presence consistently.</p>
-  </div>
+/* FIX GLITCH TEXT */
+.service-block h2 {
+  animation: none !important;
+  transform: none !important;
+}
 
-  <div class="service-block">
-    <h2>Meta Ads</h2>
-    <p>We run high-performance campaigns focused on ROI. From targeting to creatives, everything is optimized for conversions and scalability.</p>
-  </div>
+/* CTA */
+.cta {
+  background: #071426;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
 
-  <div class="service-block">
-    <h2>Content Writing</h2>
-    <p>We craft content that communicates clearly and converts effectively. Whether it's blogs, ads, or website copy, every word is strategic.</p>
-  </div>
+.cta-inner {
+  max-width: 700px;
+  margin: auto;
+}
 
-  <div class="service-block">
-    <h2>Website Development</h2>
-    <p>We build fast, modern, and responsive websites designed to impress users and convert visitors into customers.</p>
-  </div>
+.cta h2 {
+  font-size: 42px;
+}
 
-  <div class="service-block">
-    <h2>Advertising</h2>
-    <p>We design creative campaigns that capture attention and deliver measurable business results across platforms.</p>
-  </div>
+.cta p {
+  margin: 20px 0;
+  color: #ccc;
+}
 
-</section>
+.cta-btn {
+  background: white;
+  color: black;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
 
-<!-- PROCESS -->
-<section class="process">
-  <h2>Our Process</h2>
-
-  <div class="process-steps">
-
-    <div class="step">
-      <h3>01</h3>
-      <p><strong>Strategy</strong><br>We understand your business, audience, and goals before planning anything.</p>
-    </div>
-
-    <div class="step">
-      <h3>02</h3>
-      <p><strong>Execution</strong><br>We implement strategies with precision, creativity, and consistency.</p>
-    </div>
-
-    <div class="step">
-      <h3>03</h3>
-      <p><strong>Growth</strong><br>We analyze, optimize, and scale what works to maximize results.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- CTA (FIXED) -->
-<section class="cta">
-  <div class="cta-inner">
-    <h2>Let’s Grow Your Brand</h2>
-    <p>Partner with Vistar and take your business to the next level.</p>
-    <a href="#" class="cta-btn">Start a Project</a>
-  </div>
-</section>
-
-</body>
-</html>
+/* FOOTER */
+.footer {
+  background: black;
+  color: white;
+  padding: 50px 80px;
+}
