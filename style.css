@@ -624,3 +624,75 @@ a:hover {
 .contranis-card p {
   color: #ccc;
 }
+/* SERVICES PAGE ONLY */
+.services-page {
+  background: #fff;
+}
+
+.services-page .services-hero {
+  padding: 140px 20px 80px;
+  text-align: center;
+}
+
+.services-page .services-hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.services-page .services-hero p {
+  color: #666;
+}
+
+/* SERVICES LIST */
+.services-page .services-detail {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.services-page .service-block {
+  margin-bottom: 80px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.services-page .service-block:hover {
+  transform: translateY(-5px);
+}
+
+.services-page .service-block h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.services-page .service-block p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* CTA */
+.services-page .cta {
+  background: #071426;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.services-page .cta h2 {
+  font-size: 36px;
+}
+
+.services-page .cta p {
+  color: #ccc;
+}
+
+.services-page .cta-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
